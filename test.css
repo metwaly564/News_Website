@@ -1,0 +1,423 @@
+*
+{
+  padding: 0%;
+  margin: 0%;
+  list-style: none;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: capitalize;
+  box-sizing: border-box;
+  /* font-size: 2px; */
+  transition: 0.2s linear;
+  z-index: 0;
+}
+@font-face
+{
+  font-family: metwaly;
+  src: url(/assets/fonts);
+}
+:root
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  --color:#838186;
+  --color_pinky:#f74033;
+}
+body
+{
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(6,1fr);
+  grid-template-rows: repeat(9,1fr);
+  height: 92vh;
+  width: 88vw;
+  margin-top: 4vh;
+}
+
+.one
+{
+  font-size: 60px;
+  grid-column: span 3;
+  text-indent: 0.5vw;
+  line-height: 10vh;
+  font-weight: bold;
+  font-family: 'Times New Roman', Times, serif;
+  position: relative;
+  
+}
+
+.two
+{
+  grid-column: span 3;
+  display: flex;
+  justify-content: center;
+  line-height: 10vh;
+}
+a
+{
+  color: var(--color);
+  font-size: 1.1vw;
+  margin: 0px 0.8vw;
+}
+a:hover
+{
+  color: var(--color_pinky);
+}
+.show
+{
+  display: none;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+}
+.three
+{
+  grid-column: span 4;
+  position: relative;
+  grid-row: span 14;
+  overflow: hidden;
+  /* background-image: url(assets/image-web-3-desktop.jpg); */
+  background-size: cover;
+}
+.three::before
+{
+  /* content: url(/assets/images/image-web-3-desktop.jpg); */
+  transform: scale(0.5);
+  position: absolute;
+  right: -23.6vw;
+  top: -9.9vw;
+  background-size: cover;
+}
+.four
+{
+  grid-row: span 22;
+  grid-column: span 2;
+  display: flex;
+  flex-direction: column;
+  background-color: #00001a;
+  font-size: 0.2vw;
+
+}
+.four h2
+{
+  color: #ebab51;
+  font-size: 2.2vw;
+padding: 1vw 0.1vw;
+padding-bottom: 0vh;
+
+}
+.four span
+{
+  font-weight: bold;
+  color: white;
+  font-size: 1vw;
+  padding: 1vw;
+  padding-bottom: 1vh;
+  padding-top: 0%;
+}
+.four span:hover
+{
+  color: #ebab51;
+}
+.four p
+{
+font-size: 0.9vw;
+color: #9b9aa1;
+  line-height: 1.6em;
+  /* margin-left: 1.1vw; */
+}
+hr
+{
+  
+/* margin-bottom: 3.6vh; */
+/* width: 20vw; */
+display: flex;
+margin: 0vw 1vw 3.6vh 1vw;
+}
+.five
+{
+  grid-row: span 8;
+  grid-column: span 2;
+  font-weight: bold;
+  font-size: 4vw;
+  text-transform: none;
+  padding: 3px;
+  line-height: 1em;
+}
+.six
+{
+  grid-column: span 2;
+  grid-row: span 4;
+  font-size: 1.1vw;
+  padding: 0.6vw;
+  padding-top: 2vh;
+  line-height: 1.6em;
+  color: var(--color);
+}
+.seven
+{
+  grid-column: span 2;
+  grid-row: span 4;
+  padding: 0.5vw;
+  display: flex;
+  align-items: flex-end;
+}
+.seven button 
+{
+  text-transform: uppercase;
+  font-weight: bolder;
+  font-size: 0.8vw;
+  color: white;
+  letter-spacing: 4px;
+  border: none;
+  height: 6vh;
+  padding: 1px 1.4vw;
+  background-color: #00001a;
+  cursor: pointer;
+}
+.seven button:hover
+{
+  background-color:var(--color_pinky);
+
+}
+
+.eight,.nine,.ten
+{
+grid-column: span 2;
+display: flex;
+font-size: 2vw;
+padding: 2vw 0vw;
+}
+.eight img ,.nine img , .ten img
+{
+height: 8vw;
+}
+.eight .All_text ,.nine .All_text ,.ten .All_text
+{
+  display: flex;
+  flex-direction: column;
+}
+.eight h1 ,.nine h1 , .ten h1
+{
+  font-size: 2vw;
+  color: var(--color);
+}
+.eight h2 ,.nine h2 ,.ten h2
+{
+  font-size: 1.2vw;
+  
+
+}
+.eight h2:hover ,.nine h2:hover ,.ten h2:hover
+{
+  color:var(--color_pinky);
+}
+
+.eight p ,.nine p , .ten p
+{
+  font-size: 1vw;
+  line-height: 1.4em;
+  color: var(--color);
+}
+.eight h1,h2,p ,
+.nine h1,h2,p , 
+.ten h1,h2,p
+{
+  margin-left: 1vw;
+  margin-bottom: 1.8vh;
+}
+.aside
+{
+  display: none;
+}
+/*__________________________________________________________________________________________/*/
+/*__________________________________________________________________________________________/*/
+/*__________________________________________________________________________________________/*/
+/*__________________________________________________________________________________________/*/
+/*__________________________________________________________________________________________/*/
+/*__________________________________________________________________________________________/*/
+/*__________________________________________________________________________________________/*/
+/*__________________________________________________________________________________________/*/
+/*__________________________________________________________________________________________/*/
+/*__________________________________________________________________________________________/*/
+/*__________________________________________________________________________________________/*/
+/*__________________________________________________________________________________________/*/
+/*__________________________________________________________________________________________/*/
+/*__________________________________________________________________________________________/*/
+@media only screen and (min-width: 350px) and (max-width: 768px) 
+{
+
+  .one::before
+  {
+    content: "";
+  background-color: transparent;  
+  }
+.two
+{
+  display:none ;
+}
+.show
+{
+  display: flex;
+  align-items: center;
+}
+.show img
+{
+  height: 20px;
+  cursor: pointer;
+}
+body
+{
+  grid-template-columns: 1fr;
+  height: 100%;
+}
+.four,.five,.six,.seven,.eight,.nine,.ten
+{
+  grid-column: span 4;
+}
+.four h2
+{
+  font-size: 6vw;
+  padding-left: 2.3vw;
+  padding-top: 4vw;
+  padding-bottom: 1.7vw;
+
+}
+.four span 
+{
+  font-size: 5vw;
+  padding-left: 2.8vw;
+}
+.four p
+{
+  font-size: 3.5vw;
+  padding: 2vw;
+}
+hr
+{
+  --margin:3vw;
+  margin-left: var(--margin);
+  margin-right: var(--margin);
+}
+.three
+{
+  order: 2;
+}
+.five 
+{
+  font-size: 10vw;
+  order: -1;
+}
+.one
+{
+  order: -1;
+}
+.show
+{
+order: -1;
+}
+.three
+{
+  order: -1;
+}
+.six
+{
+  font-size: 4vw;
+  
+}
+.seven button
+{
+  font-size: 2.5vw;
+  font-weight: bold;
+  padding: 0.5vw 6vw;
+}
+.four
+{
+  order: 2;
+}
+.eight,.nine,.ten
+{
+  order: 10;
+}
+.eight img ,.nine img , .ten img
+{
+height: 20vw;
+}
+
+.eight h1 ,.nine h1 , .ten h1
+{
+  font-size: 5vw;
+  color: var(--color);
+}
+.eight h2 ,.nine h2 ,.ten h2
+{
+  font-size: 3.8vw;
+  padding-left: 0vw;  
+
+}
+.eight h2:hover ,.nine h2:hover ,.ten h2:hover
+{
+  color:var(--color_pinky);
+}
+
+.eight p ,.nine p , .ten p
+{
+  font-size: 3vw;
+  line-height: 1.4em;
+  color: var(--color);
+}
+.eight h1,h2,p ,
+.nine h1,h2,p , 
+.ten h1,h2,p
+{
+  margin-left: 2.7vw;
+  margin-bottom: 1vh;
+}
+.aside
+{
+  display: none;
+  flex-direction: column;
+  background-color: white;
+  position: absolute;
+  top: 0vw;
+  left: 29vw;
+  width: 71vw;
+  height: 356vw;
+  z-index: 1000;
+  align-items: flex-start;
+
+}
+.aside a
+{
+  margin-top: 8vw;
+font-size: 6vw;
+color: black;
+margin-left: 6vw;
+}
+a:hover
+{
+color: var(--color_pinky);
+}
+.aside img 
+{
+  position: absolute;
+  right: 4vw;
+  top: 4vw;
+  cursor: pointer;
+}
+.aside::before
+{
+  content: "";
+  position: absolute;
+  height: 356vw;
+  background-color: rgba(0, 0, 0, 0.344);
+  width: 30vw;
+  left: -30vw;
+}
+.close:hover
+{
+box-shadow: 0px 0px 5px 0px black;
+
+}
+}
